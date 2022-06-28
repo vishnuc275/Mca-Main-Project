@@ -1,0 +1,35 @@
+						<div class="form-row form-row-1">
+							<input type="text" name="code" class="code" id="code" placeholder="Code +" required>
+						</div>
+
+down arrow
+
+							<span class="select-btn">
+							  	<i class="zmdi zmdi-chevron-down"></i>
+							</span>
+
+
+position/exp
+
+					<div class="form-row">
+						<select name="position">
+						    <option value="experience">experience</option>
+						    <option value="0">0</option>
+						    <option value="0">1</option>
+						    <option value="employee">2</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+
+reg filepaths
+						1.   <input type="file" name="file_path2" class="file_path2" id="file_path2" placeholder="workinglicense" required>
+
+						2. <input type="file" name="file_path" class="file_path" id="file_path" placeholder="profileimage" required>
+
+filepath
+
+    file_path1 = models.FileField(upload_to='reg_pic',null=True,blank=True)
+    file_path2 = models.FileField(upload_to='reg_pic',null=True,blank=True)
+
