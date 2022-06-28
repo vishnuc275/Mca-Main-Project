@@ -1,0 +1,159 @@
+{% load static %}
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>caseregister</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.min.css' %}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'css/casestyle.css' %}">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="{% static 'images/caseimg.jpg' %}" alt="image not supported" style="height:1175px">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form" action="">{% csrf_token %}
+                        <h2>Animal/Snake Case Registration Form</h2>
+
+                        <div class="form-radio">
+                            <label for="type" class="radio-label">type :</label>
+                            <div class="form-radio-item">
+                                <input type="radio" name="type" id="type" checked>
+                                <label for="type">animal</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="type" id="snake">
+                                <label for="snake">snake</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="animalname">Animal/Snake name :</label>
+                                <input type="text" name="animalname" id="animalname" placeholder="type Nil if dont know" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="Count">Count :</label>
+                                <input type="text" name="Count" id="Count" required/>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                              <label for="time">time:</label>
+                              <input type="time" id="time" name="time">
+                            </div>
+                            <div class="form-group">
+                              <label for="time">image (if taken)</label>
+                              <input type="file" id="animalimage" name="animalimage">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                              <label for="time">Additional Comments:</label>
+                              <textarea id="addcomments" name="addcomments" rows="5" cols="70"></textarea>
+                            </div>
+                        </div>
+
+                        <h3>LOCATION DETAILS</h3>
+
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="state">District :</label>
+                                <div class="form-select">
+                                    <select name="state" id="state">
+                                        <option value=""></option>
+                                        <option value="us">Trivandum</option>
+                                        <option value="uk">Kollam</option>
+                                        <option value="uk">Pathanamthitta</option>
+                                        <option value="uk">Alappuzha</option>
+                                        <option value="uk">Kottayam</option>
+                                        <option value="uk">Idukki</option>
+                                        <option value="uk">Ernakulam</option>
+                                        <option value="uk">Thrissur</option>
+                                        <option value="uk">Palakkad</option>
+                                        <option value="uk">Malappuram</option>
+                                        <option value="uk">Kozhikode</option>
+                                        <option value="uk">Wayanad</option>
+                                        <option value="uk">Kannur</option>
+                                        <option value="uk">Kasaragod</option>
+
+
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Taluk/Sub District :</label>
+                                <input type="text" name="taluk" id="taluk" required/>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="area">Area :</label>
+                            <input type="text" name="area" id="area">
+                        </div>
+                        <div class="form-group">
+                            <label for="street">Street :</label>
+                            <input type="text" name="street" id="street">
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="landmark">Landmark :</label>
+                            <input type="text" name="landmark" id="landmark" />
+                        </div>
+                        </div>
+
+                        <h3>COMMUNICATION DETAILS</h3>
+
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Your firstname :</label>
+                            <input type="text" name="fname" id="fname" />
+                        </div>
+                        <div class="form-group">
+                        <label for="sname">secondname :</label>
+                        <input type="text" name="sname" id="sname" />
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactno">Contact No :</label>
+                            <input type="text" name="contactno" id="contactno" />
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

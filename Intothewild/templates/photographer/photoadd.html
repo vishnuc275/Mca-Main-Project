@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>photoadd</title>
+
+    <style>
+        #cs {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #cs td, #cs th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #cs tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #cs tr:hover {
+                background-color: #ddd;
+            }
+
+            #cs th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+            }
+    </style>
+</head>
+      <center>
+<form id="form1" name="form1" method="post" enctype = "multipart/form-data">
+          {% csrf_token %}
+
+    <h2>Add Images to Gallery</h2>
+    <table id="cs">
+
+
+        <tr>
+            <th>name</th>
+            <td><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+            <th>Amount</th>
+            <td><input type="text" name="amount" required></td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td><input type="file" name="image" required></td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <td> <input type="submit" value="add image" class="btn btn-default" /></td>
+
+    </table>
+</form>
+  </center>
+	</body>
+</html>
+

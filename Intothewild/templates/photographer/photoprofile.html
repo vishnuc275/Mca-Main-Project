@@ -1,0 +1,134 @@
+{% load static %}
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>photoprofile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{% static 'profile/fonts/material-design-iconic-font/css/material-design-iconic-font.css' %}">
+
+		<!-- DATE-PICKER -->
+		<link rel="stylesheet" href="vendor/date-picker/css/datepicker.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{% static 'profile/css/prostyle.css' %}">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h4></h4>
+                <section>
+                    <h3>User profile</h3>
+                	<div class="form-row">
+                        <div class="form-col">
+                            <label for="">
+                                First Name
+                            </label>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-account-o"></i>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="">
+                                Last Name
+                            </label>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-account-o"></i>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                	</div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">
+                                Email ID
+                            </label>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-email"></i>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="">
+                                Phone Number
+                            </label>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-smartphone-android"></i>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                
+				<!-- SECTION 2 -->
+                <h4></h4>
+                <section>
+                	<h3>Residential address</h3>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">
+                                housename
+                            </label>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-home"></i>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="">
+                                Street
+                            </label>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-pin"></i>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">
+                                Zip Code
+                            </label>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-pin"></i>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="">
+                                district
+                            </label>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-pin-drop"></i>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- SECTION 3 -->
+
+            </form>
+		</div>
+
+		<script src="{% static 'profile/js/projquery-3.3.1.min.js' %}"></script>
+		
+		<!-- JQUERY STEP -->
+		<script src="{% static 'profile/js/projquery.steps.js' %}"></script>
+
+		<!-- DATE-PICKER -->
+		<script src="vendor/date-picker/js/datepicker.js"></script>
+		<script src="vendor/date-picker/js/datepicker.en.js"></script>
+
+		<script src="{% static 'profile/js/promain.js' %}"></script>
+
+<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
